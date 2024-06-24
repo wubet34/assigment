@@ -1,0 +1,637 @@
+/* reset the browser styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --text-color: #fff;
+    --bg-color: #1b1f24;
+    --second-bg-color: #22282f;
+    --main-colo: #13bbff;
+    --other-color: #c3cad5;
+
+    --h1-font: 4.5rem;
+    --h2-font: 2.9rem;
+    --p-font: 1rem;
+ }
+
+body {
+    font-family: Nunito, sans-serif;
+    position: relative;
+    color: #fff;
+    background-color: var(--second-bg-color-color);
+}
+
+/* styles for the header */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: var(--bg-color);
+
+    /* make header fixed */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 3;
+
+    /* padding top/bottom set to 0, and left/right to 40px */
+    padding: 0px 40px;
+}
+
+/* styles for header container */
+header .header-container {
+    background-color: var(--bg-color);
+
+    /* arrange every immediate child horizontally */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* set the max-width */
+    max-width: 1172px;
+    margin: 0 auto;
+}
+
+/* styles for logo wrapper */
+.logo-wrapper {
+    width: auto;
+    height: 80px;
+    line-height: 80px;
+}
+
+.logo-image-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* takes space as required only */
+    display: inline-block;
+    margin-right: 8px;
+
+    /* align the logo vertically center within the parent height */
+    vertical-align: middle;
+}
+
+/* styles the logo image */
+.logo-image-wrapper img {
+    display: block;
+    width: 80px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* styles the logo text */
+.logo-wrapper .logo-text {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+/* styles the list containing navigation link */
+header .main-navbar ul {
+    /* arrange all links horizontally */
+    display: flex;
+
+    /* sets 20px space between flex items (list items) */
+    gap: 20px;
+
+    /* hides the list marker */
+    list-style: none;
+}
+
+/* styles the links */
+.main-navbar a {
+    text-decoration: none;
+    color: #13bbff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* style link on mouse over */
+.main-navbar a:hover {
+    color: #fff;
+}
+
+/* styles for hamburger menu */
+.hamburger-menu {
+    /* initially hide the menu for larger devices */
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    /* precisely arrange hamburger menu within navigation bar */
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+
+/* styles for each bar of menu */
+.hamburger-menu .bar {
+    width: 20px;
+    height: 3px;
+    display: block;
+    margin-bottom: 4px;
+    background-color: var(--main-colo);
+}
+
+.hamburger-menu:hover .bar {
+    background-color: #fff;
+}
+
+/* hide the checkbox, used for only to set style based on checkbox state */
+header input {
+    display: none;
+}
+
+/* styles for the hero section */
+
+main.container {
+    width: 100%;
+}
+
+/* styles for each section; there will be more sections */
+.container .section {
+    /* take height as required only */
+    height: auto;
+    padding: 80px;
+
+    /* aligns the content to the center */
+    text-align: center;
+}
+
+/* add the background color in alternate odd sections;
+more sections will be added later */
+.container .section:nth-of-type(odd) {
+    background-color: var(--bg-color);
+}
+
+.section .section-content {
+    height: 100%;
+    /* sets the max-width same as the max-width of header container */
+    max-width: 1172px;
+
+    /*aligns horizontally center within the parent element */
+    margin: 0 auto;
+}
+
+/* hero section style */
+.container .section-hero {
+    background-color: var(--bg-color);
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    min-height: calc(100vh - 80px);
+}
+
+/* style the heading  */
+.hero-section-content h1 {
+    font-size: var(--h1-font);
+    color: #13bbff;
+}
+
+.hero-section-content .tag-line {
+    font-size: 24px;
+    color: #13bbff;
+}
+
+/* styles the profile wrapper in hero section */
+.profile-wrapper {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 30px auto;
+}
+
+/* styles the profile image */
+.profile-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* styles the name within the hero section */
+.hero-section-content h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+/* styles all the icons */
+/* .social-icons-wrapper .fab {
+    font-size: 28px;
+    margin: 8px;
+    color: white;
+    transition: all 0.5s ease;
+} */
+
+/* styles applied on mouseover on icons */
+.social-icons-wrapper .fab:hover {
+    color: #13bbff;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon li{
+    list-style: none;
+    margin: 0 5px;
+}
+.icon .fab{
+    color: #262626;
+    font-size: 40px;
+    line-height: 80px;
+    transition: .5s;
+    padding-right: 14px;
+}
+.icon a{
+    width: 210px;
+    height: 80px;
+    background-color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding-left: 20px;
+    transform: rotate(-30deg) skew(25deg) translate(0,0);
+    text-shadow: -20px 20px 10px #00000080;
+}
+.icon a span{
+    color: #262626;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    letter-spacing: 4px;
+    transition: .5s;
+}
+.icon a::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    background: #b1b1b1;
+    top: 10px;
+    left: -20px;
+    transform: rotate(0deg) skewY(-45deg);
+}
+.icon a::after{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    background: #b1b1b1;
+    bottom: -20px;
+    left: -10px;
+    transform: rotate(0deg) skewX(-45deg);
+}
+.icon a:hover{
+    transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+    box-shadow: -50px 50px 50px #00000080;
+}
+.icon li:hover .fab, .icon li:hover span{
+    color: #fff;
+}
+.icon li:hover:nth-child(1){
+    & a{
+        background: #1b1f24;
+        &::before{
+            background: #1b1f24;
+        }
+        &::after{
+            background: #1b1f24;
+        }
+    }
+}
+.icon li:hover:nth-child(2){
+    & a{
+        background: #e4405f;
+        &::before{
+            background: #e4405f;
+        }
+        &::after{
+            background: #e4405f;
+        }
+    }
+}
+.icon li:hover:nth-child(3){
+    & a{
+        background: #00aced;
+        &::before{
+            background: #00aced;
+        }
+        &::after{
+            background: #00aced;
+        }
+    }
+}
+.icon li:hover:nth-child(4){
+    & a{
+        background: #286cbe;
+        &::before{
+            background: #286cbe;
+        }
+        &::after{
+            background: #286cbe;
+        }
+    }
+}
+
+
+
+/* common style for all section,
+section content, section heading, and section tagline */
+.container .section {
+    height: auto;
+    padding: 80px;
+    text-align: center;
+    background-color: var(--bg-color);
+}
+
+.section .section-content {
+    height: 100%;
+    max-width: 1172px;
+    margin: 0 auto;
+}
+
+.section-content .section-heading {
+    font-size: 36px;
+    color: #13bbff;
+    margin-bottom: 16px;
+}
+
+.section-content .section-tag-line {
+    font-size: 20px;
+    color: #fff;
+}
+
+.section-about .section-tag-line {
+    color: #13bbff;
+    font-size: 32px;
+}
+
+/* styles about introduction paragraph */
+.section-about p {
+    font-size: 22px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* Experiance styles here */
+
+.experience-card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 40px;
+}
+
+.experience-card {
+    width: 300px;
+    background-color: var(--second-bg-color);
+    border-radius: 12px;
+    padding: 12px 16px;
+}
+
+.experience-card .card-image-wrapper {
+    margin: 10px;
+}
+
+.experience-card li {
+    list-style: none;
+}
+
+.experience-card .list-heading {
+    font-weight: bold;
+    margin: 12px 8px;
+}
+
+/* Project Section styling Start from here */
+
+.project-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 32px;
+}
+
+.project-card {
+    width: 300px;
+    height: 300px;
+
+    /* properties for background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* set the background images for project cards */
+.project-card-1 {
+    background-image: url(image/port-1.jpg);
+}
+
+.project-card-2 {
+    background-image: url(image/port-2.jpg);
+}
+
+.project-card-3 {
+    background-image: url(image/port-3.jpg);
+}
+
+.project-card-4 {
+    background-image: url(image/port-4.jpg);
+}
+
+.project-card-5 {
+    background-image: url(image/port-5.jpg);
+}
+
+.project-card-6 {
+    background-image: url(image/port-6.jpg);
+}
+
+.project-card p {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.762);
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+/* show the project card description while hovering */
+.project-card:hover p {
+    opacity: 1;
+}
+
+/* styles the form element */
+form {
+    background-color: var(--second-bg-color-color);
+    border-radius: 12px;
+    text-align: left;
+    padding: 40px 0px;
+}
+
+/* styles the wrapper enclosing input fields and textarea */
+.form-fields-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+}
+
+form .input-box,
+form .message-box {
+    width: 50%;
+}
+
+/* styles the form label */
+form label {
+    display: block;
+    font-size: 20px;
+    margin: 8px 0px;
+}
+
+/* styles the input fields and textarea field */
+form input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+    background-color: transparent;
+    outline: none;
+    color: #ffff;
+}
+
+/* styles the form submit button */
+form button {
+    display: block;
+    width: 160px;
+    margin: 0 auto;
+    font-size: 18px;
+    background-color: #13bbff;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s ease;
+}
+
+/* changes the button background color while hovering */
+form button:hover {
+    background-color: #fff;
+    color: #13bbff;
+}
+
+
+/* styles the footer */
+footer {
+    background-color: #150f41;
+    height: 40px;
+    color: white;
+}
+
+/* styles the footer container */
+footer .footer-container {
+    line-height: 40px;
+    max-width: 1172px;
+
+    /* arranges the footer in center */
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* styles the heart icon */
+footer .heart-icon {
+    color: red;
+}
+
+/* trigger the styles for mobile at width of 756px */
+@media screen and (max-width: 756px) {
+    header .header-container {
+        padding: 0px 40px;
+    }
+
+    /* show the hamburger menu */
+    .hamburger-menu {
+        display: block;
+    }
+
+    header .main-navbar ul {
+        /* initially hide the navigation menu */
+        display: none;
+
+        padding: 40px;
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        width: 100%;
+        height: 70vh;
+        text-align: center;
+        background-color: var(--bg-color);
+        transition: all 1s ease;
+    }
+
+    /* show the navigation menu while clicking on hamburger menu */
+    header input:checked ~ .main-navbar ul {
+        display: block;
+    }
+
+    /* add margin to bottom of each list item */
+    header .main-navbar ul li {
+        margin-bottom: 20px;
+    }
+
+    /* change the flex-direction from row to column to stack cards on top of each other */
+    .experience-card-wrapper,
+    .project-card-wrapper {
+        flex-direction: column;
+    }
+
+    /* increase the width to occupy full width */
+    .experience-card {
+        width: 100%;
+        padding: 40px;
+    }
+
+    /* increase the width to occupy full width */
+    .project-card {
+        width: 100%;
+    }
+
+    /* stack the form fields on top of each other */
+    .form-fields-wrapper {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    /* set the width to 100% taking full width */
+    .message-box,
+    .input-box {
+        min-width: 100%;
+    }
+
+    /* set the padding of each section; top / bottom to 80px and left / right to 20px */
+    .container .section {
+        padding: 80px 20px;
+    }
+}

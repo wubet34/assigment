@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="image/my logo.png">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- header starts here -->
+        <header>
+            <div class="header-container">
+                <!-- a wrapper for our logo -->
+                <div class="logo-wrapper">
+                    <div class="logo-image-wrapper">
+                        <img
+                            src="/image/my logo.png"
+                        />
+                    </div>
+                    
+                </div>
+
+                <!-- used to create hamburger menu for mobile, initially hidden -->
+                <label class="hamburger-menu" for="menu-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+
+                <!-- apply styles for mobile menu based on whether checkbox is checked or not -->
+                <input type="checkbox" id="menu-button" />
+
+                <!-- navigation links for different sections -->
+                <nav class="main-navbar">
+                    <ul>
+                        <li><a href="#home-section">HOME</a></li>
+                        <li><a href="#about-section">ABOUT</a></li>
+                        <li><a href="#experience-section">EXPERIENCE</a></li>
+                        <li><a href="#project-section">PROJECT</a></li>
+                        <li><a href="#contact-section">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section Start From Here -->
+        <main class="container">
+            <section class="section section-hero" id="home-section">
+                <div class="hero-section-content">
+                    <h1>Designer, Learner, and Frontend Developer</h1>
+                    <p class="tag-line">
+                        On a mission to discover my next great adventure.
+                    </p>
+
+                    <div class="profile-wrapper">
+                        <img
+                            src="/image/me.jpg"
+                            alt="Profile Picture"
+                        />
+                    </div>
+
+                
+                    <div class="social-icons-wrapper">
+                        <ul class="icon">
+                            <li>
+                        <a href="https://github.com/wubet34" target="_blank"> <i class="fab fa-github"></i>
+                            <span> - Github</span>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fab fa-instagram"></i>
+                            <span> - Instagram</span>
+                        </a>
+                        
+                    </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i>
+                                <span> - Twitter</span>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/wubet-alebachew-a376592a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i>
+                                <span> - Linkedin</span></a>
+                            
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- about section starts here -->
+            <section class="section section-about" id="about-section">
+                <div class="section-content">
+                    <h2 class="section-heading">About</h2>
+                    <h3 class="section-tag-line">Hi, My Name is Wubet Alebachew!</h3>
+                    <p style="font-size: 15px; padding-bottom: 20px;">
+                        A passionate and creative web developer based in <br>
+                        BeautifulCity, I leverage my keen eye for design and<br>
+                        knack for problem-solving to craft beautiful, user-friendly,<br>
+                         and responsive websites. Dedicated to crafting seamless<br>
+                         digital experiences that leave a lasting impression,<br>
+                         I am a quiet yet confident
+                        individual with an insatiable <br> curiosity, constantly
+                        honing my design skills to<br> best serve the user's needs.
+                    </p>
+                </div>
+            </section>
+
+            <!-- experience section starts here -->
+            <section class="section section-experience" id="experience-section">
+                <!-- experience section content wrapper -->
+                <div class="section-content">
+                    <h2 class="section-heading">Experience</h2>
+
+                    <!-- experience card wrapper -->
+                    <div class="experience-card-wrapper">
+                        <!-- first experience card -->
+                        <div class="experience-card">
+                            <div class="card-image-wrapper">
+                                <img
+                                    src="/image/s-1 (1).svg"
+                                    alt=""
+                                />
+                            </div>
+                            <h3 class="card-title">Designer</h3>
+                            <p class="card-content">
+                                I create clean design pattern, prioritize
+                                thoughtful interactions, and value simple
+                                content structure.
+                            </p>
+                            <ul>
+                                <li class="list-heading">Design Tools</li>
+                                <li>Figma</li>
+                                <li>Font Awesome</li>
+                                <li>Pen & Paper</li>
+                                <li>Sketch</li>
+                                <li>Webflow</li>
+                            </ul>
+                        </div>
+
+                        <!-- second experience card -->
+                        <div class="experience-card">
+                            <div class="card-image-wrapper">
+                                <img
+                                    src="/image/s-2 (1).svg"
+                                    alt=""
+                                />
+                            </div>
+                            <h3 class="card-title">Developer</h3>
+                            <p class="card-content">
+                                I like to develop the designs, love to code
+                                things from scratch, and enjoy bringing new
+                                ideas to life.
+                            </p>
+                            <ul>
+                                <li class="list-heading">Dev Tools</li>
+                                <li>Vercel</li>
+                                <li>Bootstrap</li>
+                                <li>Github</li>
+                                <li>Terminal</li>
+                                <li>Atom</li>
+                            </ul>
+                        </div>
+
+                        <!-- third experience card -->
+                        <div class="experience-card">
+                            <div class="card-image-wrapper">
+                                <img
+                                    src="/image/s-3 (1).svg"
+                                    alt=""
+                                />
+                            </div>
+                            <h3 class="card-title">Coder</h3>
+                            <p class="card-content">
+                                I am very dedicated to coding, exploring new
+                                technologies, and enhancing my programming
+                                skills.
+                            </p>
+                            <ul>
+                                <li class="list-heading">Coding Tools</li>
+                                <li>IDEs</li>
+                                <li>Version Control</li>
+                                <li>Code Editors</li>
+                                <li>Debugging Tools</li>
+                                <li>Code Reviews</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project section goes here  -->
+            <section class="section section-project" id="project-section">
+                <div class="section-content">
+                    <h2 class="section-heading">Project</h2>
+                    <h3 class="section-tag-line">
+                        Here are a few past projects I've worked on.
+                    </h3>
+
+                    <div class="project-card-wrapper">
+                        <div class="project-card project-card-1">
+                            <p>
+                                Fully flexible and resposive web app for
+                                e-commerce website.
+                            </p>
+                        </div>
+                        <div class="project-card project-card-2">
+                            <p>
+                                Fully flexible and responsive web app for
+                                e-commerce website.
+                            </p>
+                        </div>
+                        <div class="project-card project-card-3">
+                            <p>
+                                Fully flexible and responsive web app for
+                                e-commerce website.
+                            </p>
+                        </div>
+                        <div class="project-card project-card-4">
+                            <p>
+                                Fully flexible and responsive web app for
+                                e-commerce website.
+                            </p>
+                        </div>
+                        <div class="project-card project-card-5">
+                            <p>
+                                Fully flexible and responsive web app for
+                                e-commerce website.
+                            </p>
+                        </div>
+                        <div class="project-card project-card-6">
+                            <p>
+                                Fully flexible and responsive web app for
+                                e-commerce website.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- form section goes here -->
+            <section class="section section-contact" id="contact-section">
+                <div class="section-content">
+                    <h2 class="section-heading">Contact</h2>
+
+                    <form action="#">
+                        <div class="form-fields-wrapper">
+                            <div class="input-box">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" />
+
+                                <label for="email">Email</label>
+                                <input type="email" id="email" />
+                            </div>
+
+                            <div class="message-box">
+                                <label for="message">Message</label>
+                                <textarea
+                                    id="message"
+                                    cols="30"
+                                    rows="6"
+                                    placeholder="Say hello..."
+                                ></textarea>
+                            </div>
+                        </div>
+                        <button>Submit</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <!-- footer section goes here -->
+        <footer>
+            <div class="footer-container">
+                <p>
+                    <span>Copyright &#169</span> all right Reserved: Wubet
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
